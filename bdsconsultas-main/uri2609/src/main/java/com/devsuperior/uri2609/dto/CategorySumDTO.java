@@ -41,3 +41,6 @@ public class CategorySumDTO {
 		return "CategorySumDTO [name=" + name + ", sum=" + sum + "]";
 	}
 }
+
+
+
