@@ -1,4 +1,4 @@
-package com.devsuperior.movieflix.services.exceptions;
+package com.devsuperior.movieflix.services;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +25,8 @@ public class UserService implements UserDetailsService{
 	private AuthService authService;
 	
 	@Transactional(readOnly = true)
-	public UserDTO getProfile() {		
+	public UserDTO getProfile() {	
+		
 		return new UserDTO(authService.authenticated());
 	}	
 	
