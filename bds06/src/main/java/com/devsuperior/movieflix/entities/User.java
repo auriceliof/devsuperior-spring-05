@@ -149,10 +149,8 @@ public class User implements UserDetails, Serializable{
 			if (role.getAuthority().equals(roleName)) {
 				return true;
 			}
-		}
-		
-		return false;
-		
+		}		
+		return false;		
 	}
 }
 
