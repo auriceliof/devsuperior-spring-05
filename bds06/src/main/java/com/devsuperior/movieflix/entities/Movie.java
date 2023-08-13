@@ -42,7 +42,7 @@ public class Movie implements Serializable{
 		
 	}
 	
-	public Movie(Long id, String title, String subTitle, Integer year, String imgUrl, String synopsis, Genre genre) {
+	public Movie(Long id, String title, String subTitle, Integer year, String imgUrl, String synopsis) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -50,7 +50,6 @@ public class Movie implements Serializable{
 		this.year = year;
 		this.imgUrl = imgUrl;
 		this.Synopsis = synopsis;
-		this.genre = genre;
 	}
 
 	public Long getId() {

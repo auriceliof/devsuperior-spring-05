@@ -27,5 +27,31 @@ public class MovieResource {
 		return ResponseEntity.ok().body(list);
 	}  
   
-
+  @PreAuthorize("hasAnyRole('MEMBER', 'VISITOR')")
+  @GetMapping(value = "/{id}")
+	public ResponseEntity<MovieDTO> findById(@PathVariable Long id) {
+		MovieDTO dto = service.findById(id);
+		return ResponseEntity.ok().body(dto);
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
